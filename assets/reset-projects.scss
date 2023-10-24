@@ -1,0 +1,84 @@
+@import 'variables';
+
+.resent-projects {
+    background-color: $resent-bg;
+    color: $primary-color;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    /*Катя добавила для header*/
+    padding-top: 14vh;
+    /*Катя добавила для header*/
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 31.25% 31.25% 31.25%;
+        grid-template-rows: 1fr 1fr 1fr;
+        max-width: 960px;
+        // max-height: 1212px;
+        gap: 20px;
+    }
+
+    .resent-projects__title {
+        text-align: center;
+        height: 64px;
+        margin-bottom: 43px;
+        position: relative;
+        font-family: Montserrat;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 36px;
+        text-transform: uppercase;
+    }
+
+    .inner {
+        font-weight: 400;
+        line-height: 20px;
+        font-style: normal;
+        height: 84px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;    
+        align-items: center;
+        justify-content: center;
+        background-color: #FFF;  
+    }
+
+    .card__title {
+        font-family: Montserrat;
+        font-size: 16px;
+        text-transform: uppercase;       
+    }
+
+    .card__subtitle {
+        font-family: Vollkorn;
+        font-size: 14px;
+    }
+
+    .card__pic {
+        filter: grayscale(100%);
+        transition: 1s;
+    }
+
+    .card__pic:hover {
+        filter: grayscale(0%);
+        box-shadow: 0px 0px 17px 2px #000;
+        transition: 1s;
+    }
+}
+
+.resent-projects__title::before {
+    content: '';
+  position: absolute;
+  bottom: 0; 
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.09);;
+}
+
+

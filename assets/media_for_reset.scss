@@ -1,0 +1,38 @@
+@media all and (max-width: 1023px) {
+    .wrapper {
+   max-width: 768px;
+   margin: 0 auto;
+   padding-top: 11vh;
+   padding-top: 14vh;  /*Катя добавила для header*/
+
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin: 0 auto;
+    }
+
+    .card__pic {
+        width: 100%;
+    }
+
+    .resent-projects__title {
+        font-size: 19px;
+    }
+}
+}
+
+
+@media all and (max-width: 767px) {
+    .wrapper {
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    .resent-project{  /*Катя добавила для header*/
+        padding-top: 14vh;
+    }
+}

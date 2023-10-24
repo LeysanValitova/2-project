@@ -1,0 +1,28 @@
+@media all and (max-width: 1440px) {
+    .location {
+       width: auto;
+      }
+}
+
+@media all and (max-width: 767px) {
+    .adressmap {
+        display: flex;
+        flex-direction: column;
+                     
+        &__icon {
+          width: 10%;
+        }
+         
+        &__adress {
+          display: grid;
+          grid-template-rows: 1fr 60px repeat(4, 30px);
+        }
+
+        &__mymap {
+         margin-left: auto;
+         margin-right: auto;
+        }
+      
+      }
+      
+}
